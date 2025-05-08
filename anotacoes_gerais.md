@@ -1,7 +1,7 @@
 
-Sooro - vaga para desenvolvedor fullstack
 
-=== Requisitos da vaga:
+
+=== Requisitos:
 Back-end Express.js – Framework minimalista para aplicações Node.js. 
 TypeORM – ORM para trabalhar com bancos de dados. 
 Redis – Armazenamento de dados em memória e cache distribuído. 

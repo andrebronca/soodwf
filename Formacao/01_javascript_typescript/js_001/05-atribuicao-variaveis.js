@@ -9,9 +9,9 @@ console.log(nome + " " + sobrenome);
 console.log(nome, sobrenome);
 console.log(`Nome: ${nome} ${sobrenome}`);  // interpolação
 
-const nome_completo = nome + " " + sobrenome;
+const nomeCompleto = nome + " " + sobrenome;
 nome = nome + " " + sobrenome;  // não é recomendado a sobrescrita
 
 console.log(nome);
-console.log(nome_completo);
+console.log(nomeCompleto);
 
