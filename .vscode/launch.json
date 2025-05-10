@@ -1,0 +1,35 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "08-Loops",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Formacao\\01_javascript_typescript\\js_001_introducao\\08-loops.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "07-Condicionais",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Formacao\\01_javascript_typescript\\js_001_introducao\\07-condicionais.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "01-OO",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\Formacao\\01_javascript_typescript\\js_002_OO\\index.js"
+        }
+    ]
+}
