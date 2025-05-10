@@ -16,6 +16,12 @@ export class ContaCorrente {
         return ContaCorrente._totalContas;
     }
 
+    // Torna a propriedade somente leitura
+    // Object.defineProperty(ContaCorrente, '_totalContas', {
+    //     writable: false,
+    //     configurable: false
+    // });
+
     set _saldo(vlr) {
         this._saldo = vlr < 0 ? 0 : vlr;
     }
