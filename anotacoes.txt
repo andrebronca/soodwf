@@ -1,1 +1,12 @@
 D:\SooDWF
+
+-- Merge
+Onde estiver codando é o user que tem de ser o ativo no checkout.
+Ex. Se for baixar do user2 e for o user1, 
+o checkout tem que estar no user1
+$ git checkout user1
+$ git fetch origin  #atualiza histórico
+$ git Merge origin/user2    #faz o merge da user2 para a user1
+
+-- Ver diferenças
+$ git diff origin/user2
