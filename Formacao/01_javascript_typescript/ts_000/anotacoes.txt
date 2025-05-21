@@ -24,6 +24,10 @@ Para instalar uma versão específica do typescript
 Desinstalar o typescript
 > npm uninstall --global typescript
 
+Inicializar um projeto
+> npm init -y
+Irá criar um arquivo: package.json
+
 Criando um projeto 
 1) criar um diretório
 2) acessar o diretório e criar um arquivo: main.ts
