@@ -1,0 +1,39 @@
+Fonte:
+https://www.geeksforgeeks.org/typescript/
+
+Antes de instalar o Typescript, tem que ter o node.js instalado
+Verificar se o node está instalado. Acessar o terminal e digitar:
+'>' indica que estou executando os comandos no windows
+'$' indica que estou executando os comandos no linux/mac
+
+> node -v
+Se aparecer a versão, ok, está instalado.
+
+Verificar se o typescript está instalado:
+> tsc -v
+
+Instalar o Typescript.
+No terminal:
+> npm install --global typescript
+> tsc -v
+versão de agora: 5.8.3 (21/05/2025)
+
+Para instalar uma versão específica do typescript
+> npm install --global typescript@5.8.3
+
+Desinstalar o typescript
+> npm uninstall --global typescript
+
+Criando um projeto 
+1) criar um diretório
+2) acessar o diretório e criar um arquivo: main.ts
+3) digitar no diretório:
+> tsc --init
+Será criado um arquivo: tsconfig.json
+No arquivo main.ts inserir um teste: 
+console.log("teste");
+salvar e compilar.
+> tsc
+será criado um arquivo: main.js
+Executar o código recém criado.
+> node main.js
