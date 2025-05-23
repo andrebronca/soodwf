@@ -13,3 +13,10 @@ git push -u origin main
 git remote add origin https://github.com/andrebronca/soodwf.git
 git branch -M main
 git push -u origin main
+
+baixando o projeto e fazendo o merge
+Se estou no pcA e quero baixar do pcB
+Tenho que garantir estar na branch correta. No caso pcA
+git checkout pcA
+git fetch origin
+git merge origin/pcB

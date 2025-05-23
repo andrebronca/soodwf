@@ -1,0 +1,6 @@
+Instalar a extensão:
+Live Server
+
+http://localhost:5500/Formacao/01_javascript_typescript/ts_002/
+
+Arquivo PDF está no pendriver: vermelho
