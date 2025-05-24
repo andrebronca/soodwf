@@ -78,9 +78,9 @@ const arrOfArrays: number[][] = [
 arrOfArrays.push([21, 32, 13]);
 
 // Functions
-const addNums = (num1, num2) => { return num1 + num2; }
-addNums(10, 20);
-addNums(10, '20');
+// const addNums = (num1, num2) => { return num1 + num2; }
+// addNums(10, 20);
+// addNums(10, '20');
 
 const multiNums = (num1: number, num2: number) => {
     return num1 * num2;
@@ -109,6 +109,79 @@ let numOrStr: number | string;
 numOrStr = 10;
 numOrStr = 'Ten';
 
-let arr: (number | string)[] = [10, 'Ten', true];
-
+// let arr: (number | string)[] = [10, 'Ten', true];
 // xiii (25 / 172)
+
+// Literal Types
+// Define os tipos aceitáveis
+let myLiteral: 'Nabendu' | 'Mousam' | 'Shikha' | 'Hriday' = 'Nabendu';
+myLiteral = 'Mousam';
+myLiteral = 'Shikha';
+myLiteral = 'Hriday';
+// myLiteral = 'Parag';
+
+// Enum types
+// é uma combinação de: Union Types & Literal Types
+enum Role { ADMIN, READ_ONLY, AUTHOR };
+const myRole = Role.ADMIN;
+const hridayRole: Role = Role.AUTHOR;
+
+// Optionals Type
+// age aqui não será utilizado na declaração, então deve ser marcada como undefined
+let optionalObj: { name: string; age: number | undefined } = {
+    name: 'Nabendu',
+    age: undefined
+};
+
+//opcional mas não obrigatório: '?'
+let betterOptObj: { name: string; age?: number } = {
+    name: 'Nabendu'
+};
+
+// Interfaces and Types
+// interface só podem ser usadas em objetos
+interface Developer {
+    name: string;
+    age: number;
+    isDev: boolean;
+}
+
+const person1: Developer = {
+    name: 'Nabendu',
+    age: 40,
+    isDev: true
+}
+
+const person2: Developer = {
+    name: 'Mousam',
+    age: 39,
+    isDev: true
+}
+
+// Types
+// types podem ser utilizados em todo tipo: string, array, objects, anything else
+type DeveloperType = {
+    name: string;
+    age: number;
+    isDev: boolean;
+}
+
+const person3: DeveloperType = {
+    name: 'Nabendu',
+    age: 40,
+    isDev: true
+}
+
+type PersonName = string;
+const person4: PersonName = 'Nabendu';
+
+type CoderType = {
+    name: string;
+    category: 'frontend' | 'backend' | 'mobile';
+    age: number;
+}[];
+
+const coder1: CoderType = [
+    { name: 'Nabendu', category: 'frontend', age: 40 },
+    { name: 'Mousam', category: 'backend', age: 39 },
+]
