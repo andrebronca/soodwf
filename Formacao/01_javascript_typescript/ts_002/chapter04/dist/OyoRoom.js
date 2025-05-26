@@ -28,6 +28,9 @@ export class OyoRoom extends Room {
     showRoomRent() {
         console.log(`${this.room}'s room rent is ${this.roomRent}`);
     }
+    cleanRoom(soap) {
+        console.log(`Cleaning ${this.room} with ${soap}.`);
+    }
 }
 OyoRoom.currentYear = 2022;
 //# sourceMappingURL=OyoRoom.js.map

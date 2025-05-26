@@ -1,6 +1,9 @@
 import { Room } from './Room.js';
 import { OyoRoom } from './OyoRoom.js';
 import { CreateRoom } from './CreateRoom.js';
+import { TreboHotel } from './TreboHotel.js';
+import { Person } from './Person.js';
+import { Greeting } from './IGreeting.js';
 
 console.log('Iniciando----------');
 // const nab = new Room('Nabendu');
@@ -50,5 +53,11 @@ const rohit = OyoRoom.createRoom('Rohit');
 console.log(rohit);
 console.log(OyoRoom.currentYear);
 
+
+const vijay = TreboHotel.getInstance();
+console.log(vijay);
+
+let developer: Greeting = new Person('Kapil');
+developer.greet('Hello from');
 
 console.log('Finalizando----------');
