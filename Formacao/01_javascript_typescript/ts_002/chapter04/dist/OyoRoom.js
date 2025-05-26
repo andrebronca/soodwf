@@ -1,16 +1,16 @@
-import { Room } from "./Room";
+import { Room } from "./Room.js";
 export class OyoRoom extends Room {
-    // private reports: string[] = [];
     constructor(room, roomRent) {
         super(room);
         this.roomRent = roomRent;
+        this.reports = [];
     }
-    // get allReports() {
-    //     return this.reports;
-    // }
-    // set newReport(report: string) {
-    //     this.reports.push(report);
-    // }
+    get allReports() {
+        return this.reports;
+    }
+    set newReport(report) {
+        this.reports.push(report);
+    }
     // orverride
     addFamilyMember(member) {
         if (member === 'Kapil')

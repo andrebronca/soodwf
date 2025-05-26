@@ -1,6 +1,6 @@
-import { Room } from './Room';
-import { OyoRoom } from './OyoRoom';
-import { CreateRoom } from './CreateRoom';
+import { Room } from './Room.js';
+import { OyoRoom } from './OyoRoom.js';
+import { CreateRoom } from './CreateRoom.js';
 console.log('Iniciando----------');
 const nab = new Room('Nabendu');
 const shi = new Room('Shikha');
@@ -18,8 +18,8 @@ shekar.showRoomRent();
 shekar.changeRoomRent(2000);
 shekar.showRoomRent();
 shekar.cleanRoom('Phenyl');
-// shekar.newReport = 'Year End Report';
-// console.log(shekar.allReports);
+shekar.newReport = 'Year End Report';
+console.log(shekar.allReports);
 console.log('OyoRoom ----: shobha');
 const shobha = new OyoRoom('Shobha', 900);
 const dapil = new OyoRoom('Shobha', 1100);
@@ -39,4 +39,5 @@ console.log(hriday.room);
 mousam.showFamily();
 mousam.cleanRoom('Lizol');
 console.log(shikha.dobShikha); //variável readonly public
+console.log('Finalizando----------');
 //# sourceMappingURL=main.js.map
