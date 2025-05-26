@@ -47,14 +47,16 @@ meu-projeto/
   "author": "",
   "license": "ISC"
 }
-- Explicação:
+- Explicação do arquivo: tsconfig.json
 "outDir": "./dist": define que os arquivos compilados .js serão salvos na pasta dist.
 "include": ["src/**/*"]: diz ao compilador para incluir todos os .ts dentro da pasta src.
 - No arquivo index.html, referenciar os arquivos js.
-<script src="dist/main.js"></script>
+<script type="module" src="./dist/main.js"></script>
 - Depois de criar os arquivos e a estrutura, para que a autocompilação funcione
-- deve-se executar o comando a seguir dentro do diretório raiz, mesmo path dos arquivos .json
+- deve-se executar o comando a seguir dentro do diretório raiz, mesmo path dos arquivos .json. Isso irá compilar os arquivos .ts
 > tsc --watch
+ou
+> tsc
 
 ============== IMPORTANTE
 - A execução de modulo em ES6 requer uma alteração na estrutura. Ver: ts_002/chapter04
@@ -74,26 +76,4 @@ meu-projeto/
 - Executar
 > npm run dev
 - Criação de arquivo .bat para encerrar os processos do vite, executar como admin
-
-=========== Resolução de conflito no git
-$ git merge origin/andreip
-Auto-merging Formacao/01_javascript_typescript/ts_002/chapter02/src/index.ts
-CONFLICT (content): Merge conflict in Formacao/01_javascript_typescript/ts_002/chapter02/src/index.ts
-Automatic merge failed; fix conflicts and then commit the result.
-
-- ver todos os arquivos com conflito
-$ git status
-- abrir no editor de código o arquivo marcado com conflito, localizar a marcação do conflito.
-
-<<<<<<< HEAD:Formacao/01_javascript_typescript/ts_002/chapter02/index.ts
-// xiii (25 / 172)
-=======
-ALGO AQUI
->>>>>>> origin/andreip:Formacao/01_javascript_typescript/ts_002/chapter02/src/index.ts
-
-- Fazer a edição do arquivo, ou remover as marcações 
-- Adiciona o arquivo
-$ git add Formacao/01_javascript_typescript/ts_002/chapter02/src/index.ts
-- commit
-- push
 
