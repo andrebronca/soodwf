@@ -1,7 +1,6 @@
 import { Room } from './Room.js';
 import { OyoRoom } from './OyoRoom.js';
 import { CreateRoom } from './CreateRoom.js';
-
 console.log('Iniciando----------');
 const nab = new Room('Nabendu');
 const shi = new Room('Shikha');
@@ -13,7 +12,6 @@ nab.addFamilyMember('Shikha');
 nab.addFamilyMember('Hriday');
 nab.cleanRoom('Lizol');
 nab.showFamily();
-
 console.log('OyoRoom ----: shekar');
 const shekar = new OyoRoom('Shekar', 1000);
 shekar.showRoomRent();
@@ -22,21 +20,17 @@ shekar.showRoomRent();
 shekar.cleanRoom('Phenyl');
 shekar.newReport = 'Year End Report';
 console.log(shekar.allReports);
-
 console.log('OyoRoom ----: shobha');
 const shobha = new OyoRoom('Shobha', 900);
 const dapil = new OyoRoom('Shobha', 1100);
 shekar.addFamilyMember('Shekar');
 shekar.addFamilyMember('Shobha');
 shekar.addFamilyMember('Kapil');
-
 shekar.showRoomRent();
-
 const nabendu = new CreateRoom('Nabendu');
 const shikha = new CreateRoom('Shikha');
 const hriday = new CreateRoom('Hriday');
 const mousam = new CreateRoom('Mousam');
-
 nabendu.addFamilyMember('Nabendu');
 shikha.addFamilyMember('Shikha');
 hriday.addFamilyMember('Hriday');
@@ -46,3 +40,4 @@ mousam.showFamily();
 mousam.cleanRoom('Lizol');
 console.log(shikha.dobShikha); //variável readonly public
 console.log('Finalizando----------');
+//# sourceMappingURL=main.js.map

@@ -1,33 +1,27 @@
 import { Room } from "./Room.js";
-
 export class OyoRoom extends Room {
-    private reports: string[] = [];
-
-    constructor(room: string, private roomRent: number) {
+    constructor(room, roomRent) {
         super(room);
+        this.roomRent = roomRent;
+        this.reports = [];
     }
-
-    //property - ini
     get allReports() {
         return this.reports;
     }
-
-    set newReport(report: string) {
+    set newReport(report) {
         this.reports.push(report);
     }
-    //property - fim
-
     // orverride
-    addFamilyMember(member: string): void {
-        if (member === 'Kapil') return
+    addFamilyMember(member) {
+        if (member === 'Kapil')
+            return;
         this.family.push(member);
     }
-
-    changeRoomRent(rent: number) {
+    changeRoomRent(rent) {
         this.roomRent = rent;
     }
-
     showRoomRent() {
         console.log(`${this.room}'s room rent is ${this.roomRent}`);
     }
 }
+//# sourceMappingURL=OyoRoom.js.map
