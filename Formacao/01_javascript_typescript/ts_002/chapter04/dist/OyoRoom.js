@@ -5,12 +5,14 @@ export class OyoRoom extends Room {
         this.roomRent = roomRent;
         this.reports = [];
     }
+    //property - ini
     get allReports() {
         return this.reports;
     }
     set newReport(report) {
         this.reports.push(report);
     }
+    //property - fim
     // orverride
     addFamilyMember(member) {
         if (member === 'Kapil')
