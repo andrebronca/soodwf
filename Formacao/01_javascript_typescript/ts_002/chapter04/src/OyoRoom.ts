@@ -2,6 +2,7 @@ import { Room } from "./Room.js";
 
 export class OyoRoom extends Room {
     private reports: string[] = [];
+    static currentYear = 2022;
 
     constructor(room: string, private roomRent: number) {
         super(room);
@@ -17,6 +18,10 @@ export class OyoRoom extends Room {
     }
     //property - fim
 
+    static createRoom(room: string) {
+        return { room: room };
+    }
+
     // orverride
     addFamilyMember(member: string): void {
         if (member === 'Kapil') return
@@ -29,5 +34,9 @@ export class OyoRoom extends Room {
 
     showRoomRent() {
         console.log(`${this.room}'s room rent is ${this.roomRent}`);
+    }
+
+    cleanRoom(soap: string): void {
+        console.log(`Cleaning ${this.room} with ${soap}.`);
     }
 }

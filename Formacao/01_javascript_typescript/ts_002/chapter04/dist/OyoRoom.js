@@ -13,6 +13,9 @@ export class OyoRoom extends Room {
         this.reports.push(report);
     }
     //property - fim
+    static createRoom(room) {
+        return { room: room };
+    }
     // orverride
     addFamilyMember(member) {
         if (member === 'Kapil')
@@ -26,4 +29,5 @@ export class OyoRoom extends Room {
         console.log(`${this.room}'s room rent is ${this.roomRent}`);
     }
 }
+OyoRoom.currentYear = 2022;
 //# sourceMappingURL=OyoRoom.js.map

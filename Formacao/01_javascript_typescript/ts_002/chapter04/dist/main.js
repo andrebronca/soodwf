@@ -39,5 +39,8 @@ console.log(hriday.room);
 mousam.showFamily();
 mousam.cleanRoom('Lizol');
 console.log(shikha.dobShikha); //variável readonly public
+const rohit = OyoRoom.createRoom('Rohit');
+console.log(rohit);
+console.log(OyoRoom.currentYear);
 console.log('Finalizando----------');
 //# sourceMappingURL=main.js.map

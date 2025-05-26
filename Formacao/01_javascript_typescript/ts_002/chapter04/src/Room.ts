@@ -1,4 +1,4 @@
-export class Room {
+export abstract class Room {
     protected family: string[] = [];
     readonly dobShikha: string = '1982-12-12';
     private readonly dobHriday: string = '2013-12-12';
@@ -15,7 +15,5 @@ export class Room {
         console.log(this.family);
     }
 
-    cleanRoom(soap: string) {
-        console.log(`Cleaning ${this.room} with ${soap}.`);
-    }
+    abstract cleanRoom(soap: string): void;
 }

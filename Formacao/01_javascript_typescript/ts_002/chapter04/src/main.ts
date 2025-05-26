@@ -3,16 +3,16 @@ import { OyoRoom } from './OyoRoom.js';
 import { CreateRoom } from './CreateRoom.js';
 
 console.log('Iniciando----------');
-const nab = new Room('Nabendu');
-const shi = new Room('Shikha');
-const hri = new Room('Hriday');
-const mou = new Room('Mousam');
-console.log(nab.dobShikha);
-nab.addFamilyMember('Nabendu');
-nab.addFamilyMember('Shikha');
-nab.addFamilyMember('Hriday');
-nab.cleanRoom('Lizol');
-nab.showFamily();
+// const nab = new Room('Nabendu');
+// const shi = new Room('Shikha');
+// const hri = new Room('Hriday');
+// const mou = new Room('Mousam');
+// console.log(nab.dobShikha);
+// nab.addFamilyMember('Nabendu');
+// nab.addFamilyMember('Shikha');
+// nab.addFamilyMember('Hriday');
+// nab.cleanRoom('Lizol');
+// nab.showFamily();
 
 console.log('OyoRoom ----: shekar');
 const shekar = new OyoRoom('Shekar', 1000);
@@ -45,4 +45,10 @@ console.log(hriday.room);
 mousam.showFamily();
 mousam.cleanRoom('Lizol');
 console.log(shikha.dobShikha); //variável readonly public
+
+const rohit = OyoRoom.createRoom('Rohit');
+console.log(rohit);
+console.log(OyoRoom.currentYear);
+
+
 console.log('Finalizando----------');
