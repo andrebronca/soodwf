@@ -2,6 +2,7 @@ import { OyoRoom } from './OyoRoom.js';
 import { CreateRoom } from './CreateRoom.js';
 import { TreboHotel } from './TreboHotel.js';
 import { Person } from './Person.js';
+import { Dog } from './Dog.js';
 console.log('Iniciando----------');
 // const nab = new Room('Nabendu');
 // const shi = new Room('Shikha');
@@ -47,5 +48,8 @@ const vijay = TreboHotel.getInstance();
 console.log(vijay);
 let developer = new Person('Kapil');
 developer.greet('Hello from');
+let dog = new Dog("Rocket");
+console.log(dog.nickName);
+dog.greet("Woof from");
 console.log('Finalizando----------');
 //# sourceMappingURL=main.js.map

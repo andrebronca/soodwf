@@ -4,6 +4,7 @@ import { CreateRoom } from './CreateRoom.js';
 import { TreboHotel } from './TreboHotel.js';
 import { Person } from './Person.js';
 import { Greeting } from './IGreeting.js';
+import { Dog } from './Dog.js';
 
 console.log('Iniciando----------');
 // const nab = new Room('Nabendu');
@@ -59,5 +60,9 @@ console.log(vijay);
 
 let developer: Greeting = new Person('Kapil');
 developer.greet('Hello from');
+
+let dog: Greeting = new Dog("Rocket");
+console.log(dog.nickName);
+dog.greet("Woof from");
 
 console.log('Finalizando----------');
