@@ -11,8 +11,5 @@ export class Room {
     showFamily() {
         console.log(this.family);
     }
-    cleanRoom(soap) {
-        console.log(`Cleaning ${this.room} with ${soap}.`);
-    }
 }
 //# sourceMappingURL=Room.js.map

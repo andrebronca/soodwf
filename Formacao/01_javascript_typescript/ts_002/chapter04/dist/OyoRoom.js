@@ -5,11 +5,22 @@ export class OyoRoom extends Room {
         this.roomRent = roomRent;
         this.reports = [];
     }
+<<<<<<< HEAD
+=======
+    //property - ini
+>>>>>>> origin/andreip
     get allReports() {
         return this.reports;
     }
     set newReport(report) {
         this.reports.push(report);
+<<<<<<< HEAD
+=======
+    }
+    //property - fim
+    static createRoom(room) {
+        return { room: room };
+>>>>>>> origin/andreip
     }
     // orverride
     addFamilyMember(member) {
@@ -23,5 +34,9 @@ export class OyoRoom extends Room {
     showRoomRent() {
         console.log(`${this.room}'s room rent is ${this.roomRent}`);
     }
+    cleanRoom(soap) {
+        console.log(`Cleaning ${this.room} with ${soap}.`);
+    }
 }
+OyoRoom.currentYear = 2022;
 //# sourceMappingURL=OyoRoom.js.map

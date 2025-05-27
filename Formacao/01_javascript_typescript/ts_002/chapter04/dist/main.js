@@ -1,17 +1,25 @@
+<<<<<<< HEAD
 import { Room } from './Room.js';
 import { OyoRoom } from './OyoRoom.js';
 import { CreateRoom } from './CreateRoom.js';
+=======
+import { OyoRoom } from './OyoRoom.js';
+import { CreateRoom } from './CreateRoom.js';
+import { TreboHotel } from './TreboHotel.js';
+import { Person } from './Person.js';
+import { Dog } from './Dog.js';
+>>>>>>> origin/andreip
 console.log('Iniciando----------');
-const nab = new Room('Nabendu');
-const shi = new Room('Shikha');
-const hri = new Room('Hriday');
-const mou = new Room('Mousam');
-console.log(nab.dobShikha);
-nab.addFamilyMember('Nabendu');
-nab.addFamilyMember('Shikha');
-nab.addFamilyMember('Hriday');
-nab.cleanRoom('Lizol');
-nab.showFamily();
+// const nab = new Room('Nabendu');
+// const shi = new Room('Shikha');
+// const hri = new Room('Hriday');
+// const mou = new Room('Mousam');
+// console.log(nab.dobShikha);
+// nab.addFamilyMember('Nabendu');
+// nab.addFamilyMember('Shikha');
+// nab.addFamilyMember('Hriday');
+// nab.cleanRoom('Lizol');
+// nab.showFamily();
 console.log('OyoRoom ----: shekar');
 const shekar = new OyoRoom('Shekar', 1000);
 shekar.showRoomRent();
@@ -39,5 +47,18 @@ console.log(hriday.room);
 mousam.showFamily();
 mousam.cleanRoom('Lizol');
 console.log(shikha.dobShikha); //variável readonly public
+<<<<<<< HEAD
+=======
+const rohit = OyoRoom.createRoom('Rohit');
+console.log(rohit);
+console.log(OyoRoom.currentYear);
+const vijay = TreboHotel.getInstance();
+console.log(vijay);
+let developer = new Person('Kapil');
+developer.greet('Hello from');
+let dog = new Dog("Rocket");
+console.log(dog.nickName);
+dog.greet("Woof from");
+>>>>>>> origin/andreip
 console.log('Finalizando----------');
 //# sourceMappingURL=main.js.map

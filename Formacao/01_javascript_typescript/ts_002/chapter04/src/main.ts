@@ -1,18 +1,25 @@
 import { Room } from './Room.js';
 import { OyoRoom } from './OyoRoom.js';
 import { CreateRoom } from './CreateRoom.js';
+<<<<<<< HEAD
+=======
+import { TreboHotel } from './TreboHotel.js';
+import { Person } from './Person.js';
+import { Greeting } from './IGreeting.js';
+import { Dog } from './Dog.js';
+>>>>>>> origin/andreip
 
 console.log('Iniciando----------');
-const nab = new Room('Nabendu');
-const shi = new Room('Shikha');
-const hri = new Room('Hriday');
-const mou = new Room('Mousam');
-console.log(nab.dobShikha);
-nab.addFamilyMember('Nabendu');
-nab.addFamilyMember('Shikha');
-nab.addFamilyMember('Hriday');
-nab.cleanRoom('Lizol');
-nab.showFamily();
+// const nab = new Room('Nabendu');
+// const shi = new Room('Shikha');
+// const hri = new Room('Hriday');
+// const mou = new Room('Mousam');
+// console.log(nab.dobShikha);
+// nab.addFamilyMember('Nabendu');
+// nab.addFamilyMember('Shikha');
+// nab.addFamilyMember('Hriday');
+// nab.cleanRoom('Lizol');
+// nab.showFamily();
 
 console.log('OyoRoom ----: shekar');
 const shekar = new OyoRoom('Shekar', 1000);

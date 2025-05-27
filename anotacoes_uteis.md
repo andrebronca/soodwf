@@ -47,14 +47,16 @@ meu-projeto/
   "author": "",
   "license": "ISC"
 }
-- Explicação:
+- Explicação do arquivo: tsconfig.json
 "outDir": "./dist": define que os arquivos compilados .js serão salvos na pasta dist.
 "include": ["src/**/*"]: diz ao compilador para incluir todos os .ts dentro da pasta src.
 - No arquivo index.html, referenciar os arquivos js.
-<script src="dist/main.js"></script>
+<script type="module" src="./dist/main.js"></script>
 - Depois de criar os arquivos e a estrutura, para que a autocompilação funcione
-- deve-se executar o comando a seguir dentro do diretório raiz, mesmo path dos arquivos .json
+- deve-se executar o comando a seguir dentro do diretório raiz, mesmo path dos arquivos .json. Isso irá compilar os arquivos .ts
 > tsc --watch
+ou
+> tsc
 
 ============== IMPORTANTE
 - A execução de modulo em ES6 requer uma alteração na estrutura. Ver: ts_002/chapter04
@@ -75,6 +77,7 @@ meu-projeto/
 > npm run dev
 - Criação de arquivo .bat para encerrar os processos do vite, executar como admin
 
+<<<<<<< HEAD
 =========== Resolução de conflito no git
 $ git merge origin/andreip
 Auto-merging Formacao/01_javascript_typescript/ts_002/chapter02/src/index.ts
@@ -97,3 +100,5 @@ $ git add Formacao/01_javascript_typescript/ts_002/chapter02/src/index.ts
 - commit
 - push
 
+=======
+>>>>>>> origin/andreip

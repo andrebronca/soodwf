@@ -30,4 +30,8 @@ export class OyoRoom extends Room {
     showRoomRent() {
         console.log(`${this.room}'s room rent is ${this.roomRent}`);
     }
+
+    cleanRoom(soap: string): void {
+        console.log(`Cleaning ${this.room} with ${soap}.`);
+    }
 }

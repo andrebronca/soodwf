@@ -1,0 +1,19 @@
+# .gitattributes
+# Definições gerais
+* text=auto
+
+# Arquivos de texto mantêm o formato original
+*.js text
+*.ts text
+*.json text
+*.html text
+*.css text
+
+# Binários (imagens, vídeos, etc.) não devem ter fim de linha convertido
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.mp3 binary
+*.ogg binary
+*.mp4 binary
