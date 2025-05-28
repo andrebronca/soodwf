@@ -1,0 +1,5 @@
+# download do blog para teste
+https://startbootstrap.com/theme/clean-blog
+
+# detectar mudanças e automaticamente reiniciar o servidor
+npm install nodemon --save-dev
