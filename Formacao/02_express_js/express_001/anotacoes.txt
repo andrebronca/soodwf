@@ -1,0 +1,20 @@
+# Tem que te o node instalado
+$ node -v
+# gerenciador de pacotes do node (Node Package Manager)
+$ npm -v
+# criar o arquivo package.json
+$ npm init
+
+# Executar o projeto
+$ node index.js
+
+# Acessar o projeto
+http://localhost:3000
+
+# Site com pacotes do node
+npmjs.com
+# Instalar o express
+$ npm i express
+$ npm fund
+
+
