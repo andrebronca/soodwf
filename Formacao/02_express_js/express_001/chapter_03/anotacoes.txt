@@ -1,5 +1,32 @@
+Última pg lida: 44
+
 # download do blog para teste
 https://startbootstrap.com/theme/clean-blog
 
 # detectar mudanças e automaticamente reiniciar o servidor
 npm install nodemon --save-dev
+
+# quando intalar um pacote em uma branch, e fazer o merge em outra branch, para instalar
+# as dependências executar o comando:
+$ npm install
+ou
+$ npm i
+
+# verificar se o nodemon está instalado
+$ npx nodemon --version
+
+# executar apenas com o node
+$ node index.js
+
+# executar com nodemon
+$ npm start
+
+# Instalação do EJS
+$ npm install ejs --save
+
+# documentação do EJS
+https://ejs.co/#docs
+
+# instalação do MongoDB
+https://www.mongodb.com/try/download/community-kubernetes-operator
+
