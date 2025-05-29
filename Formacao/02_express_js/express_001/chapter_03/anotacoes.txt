@@ -1,4 +1,4 @@
-Última pg lida: 44
+Última pg lida: 53
 
 # download do blog para teste
 https://startbootstrap.com/theme/clean-blog
@@ -29,4 +29,10 @@ https://ejs.co/#docs
 
 # instalação do MongoDB
 https://www.mongodb.com/try/download/community-kubernetes-operator
+
+# depois de executar o teste, abrir o MongoDB Compass
+mongodb://localhost:27017
+
+# documentação do MongoDB
+https://www.mongodb.com/pt-br/docs/manual/tutorial/query-documents/
 
