@@ -1,0 +1,26 @@
+Padrão Criacional
+
+1. Abstract Factory  
+    Conceito : Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+
+    Recomendação de uso : Quando o sistema precisa ser independente da forma como seus objetos são criados, ou quando se trabalha com múltiplas variações de produtos que precisam ser usadas em conjunto.
+     
+2. Builder  
+    Conceito : Separa a construção de um objeto complexo de sua representação final, permitindo que o mesmo processo de construção crie diferentes representações.
+
+    Recomendação de uso : Quando é necessário criar objetos complexos passo a passo, especialmente quando há muitas etapas ou variações no processo de montagem.
+     
+3. Factory Method  
+    Conceito : Define uma interface para criar um objeto, mas delega a decisão de qual classe instanciar para subclasses.
+
+    Recomendação de uso : Quando uma classe não sabe exatamente qual tipo de objeto precisa criar, ou quando essa responsabilidade deve ser adiada para subclasses.
+     
+4. Singleton  (deve ser evitado em javascript)
+    Conceito : Garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
+
+    Recomendação de uso : Quando é necessário garantir que exista somente uma instância de uma classe, como em gerenciadores de configuração, conexões com banco de dados ou controladores de recursos compartilhados. 
+
+5. Prototype  
+    Conceito : Permite a criação de novos objetos copiando um protótipo existente, ao invés de instanciá-los diretamente a partir de classes.
+    
+    Recomendação de uso : Quando a criação de objetos é mais simples por meio de cópia do que por instanciação, ou quando o sistema deve ser independente tanto da forma como os objetos são criados quanto de sua composição.

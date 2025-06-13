@@ -1,0 +1,79 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' ---------------- Interfaces (representação implícita) ----------------
+interface King {
+    +makeDecision()
+}
+
+interface HandOfTheKing {
+    +makeDecision()
+}
+
+' ---------------- Concrete Kings ----------------
+class KingJoffery {
+    +makeDecision()
+}
+
+class KingAerys {
+    +makeDecision()
+}
+
+KingJoffery --|> King
+KingAerys --|> King
+
+' ---------------- Concrete Hands ----------------
+class LordTywin {
+    +makeDecision()
+}
+
+class LordConnington {
+    +makeDecision()
+}
+
+LordTywin --|> HandOfTheKing
+LordConnington --|> HandOfTheKing
+
+' ---------------- Abstract Factory ----------------
+abstract class KingdomFactory {
+    +getKing() : King
+    +getHandOfTheKing() : HandOfTheKing
+}
+
+' ---------------- Concrete Factories ----------------
+class LannisterFactory {
+    +getKing() : King
+    +getHandOfTheKing() : HandOfTheKing
+}
+
+class TargaryenFactory {
+    +getKing() : King
+    +getHandOfTheKing() : HandOfTheKing
+}
+
+KingdomFactory <|-- LannisterFactory
+KingdomFactory <|-- TargaryenFactory
+
+KingJoffery <-- LannisterFactory : "creates"
+LordTywin <-- LannisterFactory : "creates"
+
+KingAerys <-- TargaryenFactory : "creates"
+LordConnington <-- TargaryenFactory : "creates"
+
+' ---------------- Client ----------------
+class CourtSession {
+    -COMPLAINT_THRESHOLD : int
+    +complaintPresented(complaint)
+}
+
+CourtSession --> KingdomFactory : uses
+CourtSession --> King : delegates
+CourtSession --> HandOfTheKing : delegates
+
+note right of CourtSession::complaintPresented
+    If complaint.severity < threshold,
+    decision is made by HandOfTheKing.
+    Otherwise, by King.
+end note
+
+@enduml

@@ -1,0 +1,60 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' ========= Classes principais =========
+class Tournament {
+    +events: Event[]
+    +attendees: Attendee[]
+    +prizes: Prize[]
+}
+
+class Event {
+    -name: String
+    +getName(): String
+}
+
+class Prize {
+    -name: String
+    +getName(): String
+}
+
+class Attendee {
+    -name: String
+    +getName(): String
+}
+
+' ========= Builders =========
+abstract class TournamentBuilder {
+    +build(builder): Tournament
+}
+
+class LannisterTournamentBuilder {
+    +build(): Tournament
+}
+
+class BaratheonTournamentBuilder {
+    +build(): Tournament
+}
+
+TournamentBuilder <|-- LannisterTournamentBuilder
+TournamentBuilder <|-- BaratheonTournamentBuilder
+
+' ========= Relacionamentos =========
+Tournament "1" *-- "0..*" Event : contains
+Tournament "1" *-- "0..*" Attendee : contains
+Tournament "1" *-- "0..*" Prize : contains
+
+LannisterTournamentBuilder --> Tournament : builds
+BaratheonTournamentBuilder --> Tournament : builds
+
+note right of LannisterTournamentBuilder::build
+    Cria eventos como Joust, Melee,
+    participante Jamie e prêmios em ouro.
+end note
+
+note right of BaratheonTournamentBuilder::build
+    Cria eventos como Joust, Melee,
+    participantes Stannis e Robert.
+end note
+
+@enduml

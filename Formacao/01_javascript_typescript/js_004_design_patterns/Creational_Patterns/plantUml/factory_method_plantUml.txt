@@ -1,0 +1,64 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' ========= Interfaces (implícitas) =========
+interface God {
+    +prayTo()
+}
+
+' ========= Implementações concretas =========
+class WateryGod {
+    +prayTo()
+}
+
+class AncientGods {
+    +prayTo()
+}
+
+class DefaultGod {
+    +prayTo()
+}
+
+WateryGod --|> God
+AncientGods --|> God
+DefaultGod --|> God
+
+note right of WateryGod
+  Representa a divindade das águas.
+end note
+
+note right of AncientGods
+  Representa os deuses antigos.
+end note
+
+note right of DefaultGod
+  Representa o deus padrão, caso não seja especificado.
+end note
+
+' ========= Fábrica =========
+class GodFactory {
+    +Build(godName: String): God
+}
+
+note right of GodFactory::Build
+  Método estático que retorna uma
+  instância de God conforme o nome.
+end note
+
+' ========= Cliente =========
+class Prayer {
+    +pray(godName: String)
+}
+
+Prayer --> GodFactory : uses
+GodFactory --> God : creates >>
+WateryGod <|-- GodFactory : creates
+AncientGods <|-- GodFactory : creates
+DefaultGod <|-- GodFactory : creates
+
+note right of Prayer
+  Classe cliente que utiliza o
+  padrão Factory para orar a um deus.
+end note
+
+@enduml

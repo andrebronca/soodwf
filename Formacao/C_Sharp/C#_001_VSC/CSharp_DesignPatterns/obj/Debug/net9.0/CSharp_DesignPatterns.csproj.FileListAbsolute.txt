@@ -1,0 +1,15 @@
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\bin\Debug\net9.0\CSharp_DesignPatterns.exe
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\bin\Debug\net9.0\CSharp_DesignPatterns.deps.json
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\bin\Debug\net9.0\CSharp_DesignPatterns.runtimeconfig.json
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\bin\Debug\net9.0\CSharp_DesignPatterns.dll
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\bin\Debug\net9.0\CSharp_DesignPatterns.pdb
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\CSharp_DesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\CSharp_DesignPatterns.AssemblyInfoInputs.cache
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\CSharp_DesignPatterns.AssemblyInfo.cs
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\CSharp_DesignPatterns.csproj.CoreCompileInputs.cache
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\CSharp_DesignPatterns.sourcelink.json
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\CSharp_DesignPatterns.dll
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\refint\CSharp_DesignPatterns.dll
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\CSharp_DesignPatterns.pdb
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\CSharp_DesignPatterns.genruntimeconfig.cache
+D:\Alura\soodwf\Formacao\C_Sharp\C#_001_VSC\CSharp_DesignPatterns\obj\Debug\net9.0\ref\CSharp_DesignPatterns.dll

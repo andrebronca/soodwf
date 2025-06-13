@@ -1,0 +1,41 @@
+1. Adapter  
+
+    Conceito : Permite que interfaces incompatíveis trabalhem juntas. Age como uma "ponte" entre duas classes com interfaces diferentes.
+    Recomendação de uso : Quando você precisa integrar componentes legados ou terceiros que não compartilham a mesma interface.
+     
+
+2. Bridge  
+
+    Conceito : Separa uma abstração de sua implementação, permitindo que ambas variem independentemente.
+    Recomendação de uso : Quando há múltiplas variações em dois (ou mais) eixos de complexidade (ex: tipo de objeto + plataforma), evitando explosão combinatória de subclasses.
+     
+
+3. Composite  
+
+    Conceito : Compose objetos em estruturas em forma de árvore para representar hierarquias parte-todo.
+    Recomendação de uso : Quando precisar tratar grupos de objetos da mesma forma que os objetos individuais (ex: elementos gráficos compostos).
+     
+
+4. Decorator  
+
+    Conceito : Adiciona dinamicamente responsabilidades a um objeto encapsulando-o com outros objetos que oferecem funcionalidades estendidas.
+    Recomendação de uso : Como alternativa flexível à herança para estender funcionalidades sem modificar a classe original.
+     
+
+5. Façade  
+
+    Conceito : Fornece uma interface simplificada para um conjunto de interfaces em um subsistema.
+    Recomendação de uso : Para simplificar o acesso a sistemas complexos ou conjuntos de APIs complicadas.
+     
+
+6. Flyweight  
+
+    Conceito : Minimiza o uso de memória usando o compartilhamento de dados comuns entre múltiplos objetos semelhantes.
+    Recomendação de uso : Quando é necessário criar muitos objetos similares e o consumo de memória se torna um problema.
+     
+
+7. Proxy  
+
+    Conceito : Controla o acesso a um objeto, permitindo operações antes ou depois de repassar as chamadas ao objeto real.
+    Recomendação de uso : Para adicionar comportamentos como cache, controle de acesso, logging ou lazy loading sem alterar o objeto original.
+     
